@@ -61,7 +61,7 @@ if (Meteor.isServer) {
     host: 'localhost',
     // Port 3407 as specified in leaderboard.mysql.json
     // If using external MySQL server, the default port is 3306
-    port: 3407,
+    port: 3306,
     user: 'root',
     password: '',
     database: 'leaderboard'
