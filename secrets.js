@@ -1,10 +1,5 @@
 // Data is read from select statements published by server
 secrets = new MysqlSubscription('allSecrets');
-// myScore = new MysqlSubscription('playerScore', 'Maxwell');
-
-// myScore.addEventListener('update', function(diff, data) {
-//   console.log(data[0].score);
-// });
 
 if (Meteor.isClient) {
 
@@ -82,22 +77,6 @@ if (Meteor.isServer) {
       [ { table: 'confessional_secrets' } ]
     );
   });
-
-
-  // Meteor.publish('playerScore', function(name) {
-  //   return liveDb.select(
-  //     'SELECT id, score FROM players WHERE name = ' + liveDb.db.escape(name),
-  //     [
-  //       {
-  //         table: 'players',
-  //         condition: function(row, newRow, rowDeleted) {
-  //           // newRow provided on UPDATE query events
-  //           return row.name === name || (newRow && newRow.name === name);
-  //         }
-  //       }
-  //     ]
-  //   );
-  // });
 
   Meteor.methods({
     'insertSecret': function(text) {
