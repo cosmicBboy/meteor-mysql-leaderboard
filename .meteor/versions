@@ -43,6 +43,7 @@ npm-mongo@1.4.39_1
 numtel:mysql@1.0.3
 observe-sequence@1.0.7
 ordered-dict@1.0.4
+pauldowman:dotenv@1.0.1
 promise@0.4.8
 random@1.0.4
 reactive-dict@1.1.1
